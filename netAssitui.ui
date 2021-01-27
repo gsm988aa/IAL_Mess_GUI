@@ -620,468 +620,488 @@ QTableWidget QComboBox{
      <height>768</height>
     </size>
    </property>
-   <widget class="QWidget" name="widget" native="true">
-    <property name="geometry">
-     <rect>
-      <x>12</x>
-      <y>12</y>
-      <width>1139</width>
-      <height>894</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,4">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,1,1">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QWidget" name="mainwidget" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,4">
        <item>
-        <widget class="QGroupBox" name="NetSettings">
-         <property name="maximumSize">
-          <size>
-           <width>221</width>
-           <height>16777215</height>
-          </size>
-         </property>
-         <property name="title">
-          <string>Netz_einstellen</string>
-         </property>
-         <layout class="QGridLayout" name="gridLayout_5">
-          <item row="0" column="0">
-           <widget class="QLabel" name="prot_lb">
-            <property name="text">
-             <string>1.Protokolsart</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0" colspan="2">
-           <widget class="QComboBox" name="prot_box">
-            <property name="editable">
-             <bool>false</bool>
-            </property>
-            <property name="currentIndex">
-             <number>0</number>
-            </property>
-            <item>
-             <property name="text">
-              <string>TCP Server</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>TCP Client</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>UDP</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="localip_lb">
-            <property name="text">
-             <string>2.Lokal IP Address</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="0" colspan="2">
-           <widget class="QLineEdit" name="Localip_lineedit">
-            <property name="text">
-             <string>127.0.0.1</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="0">
-           <widget class="QLabel" name="localport_lb">
-            <property name="text">
-             <string>3.Lokal Portnummer</string>
-            </property>
-            <property name="openExternalLinks">
-             <bool>false</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="0" colspan="2">
-           <widget class="QLineEdit" name="Localport_lineedit">
-            <property name="text">
-             <string>8888</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="0">
-           <widget class="QPushButton" name="open_btn">
-            <property name="text">
-             <string>Hören</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="1">
-           <widget class="QPushButton" name="close_btn">
-            <property name="text">
-             <string>Trenen</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item>
-        <widget class="QGroupBox" name="RecvSettings">
-         <property name="maximumSize">
-          <size>
-           <width>221</width>
-           <height>16777215</height>
-          </size>
-         </property>
-         <property name="title">
-          <string>Empfangsbereichseinstellungen</string>
-         </property>
-         <layout class="QGridLayout" name="gridLayout_4">
-          <item row="0" column="0" colspan="2">
-           <widget class="QCheckBox" name="recv2file">
-            <property name="text">
-             <string>Daten in Datei speichern</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0" colspan="2">
-           <widget class="QCheckBox" name="newline">
-            <property name="text">
-             <string>Word wrap</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0" colspan="2">
-           <widget class="QCheckBox" name="timestamp">
-            <property name="text">
-             <string>Empfangszeit anzeigen</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="0">
-           <widget class="QCheckBox" name="stopdsp">
-            <property name="text">
-             <string>Stoppen</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="0">
-           <widget class="QPushButton" name="save_btn">
-            <property name="text">
-             <string>Datei speichern</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="0" colspan="2">
-           <widget class="QCheckBox" name="hex_recv">
-            <property name="text">
-             <string>Hexadezimale Anzeige</string>
-            </property>
-            <property name="checked">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="1">
-           <widget class="QPushButton" name="clr_btn">
-            <property name="text">
-             <string>Anzeige löschen</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item>
-        <widget class="QGroupBox" name="SendSettings">
-         <property name="maximumSize">
-          <size>
-           <width>221</width>
-           <height>16777215</height>
-          </size>
-         </property>
-         <property name="title">
-          <string>Einstellungen senden</string>
-         </property>
-         <layout class="QGridLayout" name="gridLayout">
-          <item row="4" column="0">
-           <widget class="QCheckBox" name="Sendloop">
-            <property name="text">
-             <string>Period Senden(TCP)</string>
-            </property>
-            <property name="checked">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="3">
-           <widget class="QLabel" name="ms_lbl">
-            <property name="text">
-             <string>ms</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0" colspan="3">
-           <widget class="QCheckBox" name="Sendclear">
-            <property name="text">
-             <string>Nach Senden löschen</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0" colspan="3">
-           <widget class="QCheckBox" name="Sendcheck">
-            <property name="text">
-             <string>Zusätzliche Bits senden</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="0" colspan="2">
-           <widget class="QPushButton" name="file_send_btn">
-            <property name="text">
-             <string>File Senden</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="0" colspan="3">
-           <widget class="QCheckBox" name="hex_send">
-            <property name="text">
-             <string>Hexadezimales Senden</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="2" colspan="2">
-           <widget class="QPushButton" name="clr_btn2">
-            <property name="text">
-             <string>klar</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="0" colspan="2">
-           <widget class="QCheckBox" name="file_load">
-            <property name="text">
-             <string>Lade Datei</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="2">
-           <widget class="QLineEdit" name="loopinterval">
-            <property name="text">
-             <string>500</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout" stretch="1,3,3">
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <layout class="QVBoxLayout" name="left_verticalLayout" stretch="1,1,1">
          <item>
-          <widget class="QLabel" name="label">
-           <property name="enabled">
-            <bool>true</bool>
+          <widget class="QGroupBox" name="NetSettings">
+           <property name="maximumSize">
+            <size>
+             <width>221</width>
+             <height>16777215</height>
+            </size>
            </property>
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
+           <property name="title">
+            <string>Netz_einstellen</string>
            </property>
-           <property name="text">
-            <string/>
+           <widget class="QWidget" name="">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>16</y>
+              <width>221</width>
+              <height>201</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QLabel" name="prot_lb">
+               <property name="text">
+                <string>1.Protokolsart</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="prot_box">
+               <property name="editable">
+                <bool>false</bool>
+               </property>
+               <property name="currentIndex">
+                <number>0</number>
+               </property>
+               <item>
+                <property name="text">
+                 <string>TCP Server</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>TCP Client</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>UDP</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="localip_lb">
+               <property name="text">
+                <string>2.Lokal IP Address</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="Localip_lineedit">
+               <property name="text">
+                <string>127.0.0.1</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="localport_lb">
+               <property name="text">
+                <string>3.Lokal Portnummer</string>
+               </property>
+               <property name="openExternalLinks">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="Localport_lineedit">
+               <property name="text">
+                <string>8888</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_9">
+               <item>
+                <widget class="QPushButton" name="open_btn">
+                 <property name="text">
+                  <string>Hören</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="close_btn">
+                 <property name="text">
+                  <string>Trenen</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="RecvSettings">
+           <property name="maximumSize">
+            <size>
+             <width>221</width>
+             <height>16777215</height>
+            </size>
            </property>
-           <property name="pixmap">
-            <pixmap>biglogo.png</pixmap>
+           <property name="title">
+            <string>Empfangsbereichseinstellungen</string>
            </property>
-           <property name="scaledContents">
-            <bool>true</bool>
+           <layout class="QVBoxLayout" name="verticalLayout_2" stretch="2,2,2,2,2,2">
+            <item>
+             <widget class="QCheckBox" name="recv2file">
+              <property name="text">
+               <string>Daten in Datei speichern</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="newline">
+              <property name="text">
+               <string>Word wrap</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="timestamp">
+              <property name="text">
+               <string>Empfangszeit anzeigen</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="hex_recv">
+              <property name="text">
+               <string>Hexadezimale Anzeige</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="stopdsp">
+              <property name="text">
+               <string>Stoppen</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="0,0">
+              <item>
+               <widget class="QPushButton" name="save_btn">
+                <property name="text">
+                 <string>Datei speichern</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="clr_btn">
+                <property name="text">
+                 <string>Anzeige löschen</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="SendSettings">
+           <property name="maximumSize">
+            <size>
+             <width>221</width>
+             <height>16777215</height>
+            </size>
            </property>
+           <property name="title">
+            <string>Einstellungen senden</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QCheckBox" name="file_load">
+              <property name="text">
+               <string>Lade Datei</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="Sendcheck">
+              <property name="text">
+               <string>Zusätzliche Bits senden</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="Sendclear">
+              <property name="text">
+               <string>Nach Senden löschen</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="hex_send">
+              <property name="text">
+               <string>Hexadezimales Senden</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_12" stretch="3,1,1">
+              <item>
+               <widget class="QCheckBox" name="Sendloop">
+                <property name="text">
+                 <string>Period Senden(TCP)</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="loopinterval">
+                <property name="text">
+                 <string>500</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="ms_lbl">
+                <property name="text">
+                 <string>ms</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_11">
+              <item>
+               <widget class="QPushButton" name="file_send_btn">
+                <property name="text">
+                 <string>File Senden</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="clr_btn2">
+                <property name="text">
+                 <string>klar</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
           </widget>
          </item>
         </layout>
        </item>
        <item>
-        <widget class="QGroupBox" name="Datarecv">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>1</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>450</height>
-          </size>
-         </property>
-         <property name="title">
-          <string>Netzwerkdatenempfang</string>
-         </property>
-         <layout class="QVBoxLayout" name="verticalLayout_3" stretch="6,1,1">
-          <item>
-           <widget class="QTextBrowser" name="DataRecvtext">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout">
+        <layout class="QVBoxLayout" name="right_verticalLayout" stretch="1,3,3">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>1</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>biglogo.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="Datarecv">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>450</height>
+            </size>
+           </property>
+           <property name="title">
+            <string>Netzwerkdatenempfang</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3" stretch="6,1,1">
             <item>
-             <widget class="QLabel" name="clients_lbl">
-              <property name="text">
-               <string>Klient</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="clients_list">
+             <widget class="QTextBrowser" name="DataRecvtext">
               <property name="sizePolicy">
-               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
               </property>
-              <property name="editable">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_6">
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_2">
-              <item>
-               <widget class="QLabel" name="remoteip_lbl">
-                <property name="text">
-                 <string>Remote IP</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="remoteip_text"/>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_3">
-              <item>
-               <widget class="QLabel" name="remoteport_lbl">
-                <property name="text">
-                 <string>Portnummer</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="remoteport_text"/>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item>
-        <widget class="QGroupBox" name="Datasend">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>1</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>550</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="title">
-          <string>Datenübertragung</string>
-         </property>
-         <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="0">
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="4,1,1,1,1">
-            <item>
-             <widget class="QTextBrowser" name="DataSendtext">
               <property name="readOnly">
-               <bool>false</bool>
+               <bool>true</bool>
               </property>
              </widget>
             </item>
             <item>
-             <spacer name="horizontalSpacer">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QLabel" name="clients_lbl">
+                <property name="text">
+                 <string>Klient</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="clients_list">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="editable">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
             </item>
             <item>
-             <widget class="QPushButton" name="send_Btn">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="text">
-               <string>Senden</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_2">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
-             <widget class="QPushButton" name="plotButton">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="text">
-               <string>Plot &amp; Analyse</string>
-              </property>
-             </widget>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                 <widget class="QLabel" name="remoteip_lbl">
+                  <property name="text">
+                   <string>Remote IP</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="remoteip_text"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <item>
+                 <widget class="QLabel" name="remoteport_lbl">
+                  <property name="text">
+                   <string>Portnummer</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="remoteport_text"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
             </item>
            </layout>
-          </item>
-         </layout>
-        </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="Datasend">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>550</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="title">
+            <string>Datenübertragung</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="0">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="4,1,1,1,1">
+              <item>
+               <widget class="QTextBrowser" name="DataSendtext">
+                <property name="readOnly">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="send_Btn">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Senden</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="plotButton">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Plot &amp; Analyse</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
        </item>
       </layout>
-     </item>
-    </layout>
-   </widget>
-   <zorder></zorder>
-   <zorder></zorder>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -1089,7 +1109,7 @@ QTableWidget QComboBox{
      <x>0</x>
      <y>0</y>
      <width>1218</width>
-     <height>19</height>
+     <height>20</height>
     </rect>
    </property>
   </widget>
